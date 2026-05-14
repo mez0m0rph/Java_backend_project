@@ -4,7 +4,7 @@ import com.panin.tasktracker.dto.task.TaskFilterRequest;
 import com.panin.tasktracker.entity.Task;
 import org.springframework.data.jpa.domain.Specification;
 
-public class TaskSpecification {
+public class TaskSpecification { // динамические фильтры (типо IQueryable)
 
     public static Specification<Task> build(TaskFilterRequest filter) {
         return Specification.where(projectId(filter.projectId()))

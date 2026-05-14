@@ -17,7 +17,7 @@ import java.io.IOException;
 
 @Component
 @RequiredArgsConstructor
-public class JwtAuthenticationFilter extends OncePerRequestFilter {
+public class JwtAuthenticationFilter extends OncePerRequestFilter {  // проверка Bearer, достает username из JWT, загружает пользователя
 
     private final JwtService jwtService;
     private final AppUserDetailsService userDetailsService;

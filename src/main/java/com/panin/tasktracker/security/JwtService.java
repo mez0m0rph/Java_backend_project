@@ -14,7 +14,7 @@ import java.util.Date;
 import java.util.HashMap;
 
 @Service
-public class JwtService {
+public class JwtService {  // генерация jwt, получение username из токена, чек валидности токена
 
     @Value("${app.security.jwt-secret}")
     private String jwtSecret;
